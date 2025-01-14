@@ -294,7 +294,7 @@ message FinalityProviderSigningInfo {
 Note that the value of `missed_blocks_counter` in the
 `FinalityProviderSigningInfo` is the same as the summed value of the
 corresponding missed block bitmap. This is to avoid unnecessary bitmap reads.
-Also note that the judgement of whether a finality signature is `missed` or not
+Also note that the judgment of whether a finality signature is `missed` or not
 is irreversible.
 
 The two maps will be updated upon `BeginBlock` which will be described in a
@@ -401,7 +401,7 @@ Upon `MsgAddFinalitySig`, a Babylon node will execute as follows:
 ### MsgUpdateParams
 
 The `MsgUpdateParams` message is used for updating the module parameters for the
-Finality module. It can only be executed via a govenance proposal.
+Finality module. It can only be executed via a governance proposal.
 
 ```protobuf
 // MsgUpdateParams defines a message for updating finality module parameters.
